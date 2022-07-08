@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { getCharactersByCategory } from "../api/getCharactersByCategory";
+import { CharacterCard } from "./CharacterCard";
 
 export const ListCharacters = ({ category }) => {
   const [searchValue, setSearchValue] = useState('')
@@ -42,20 +43,7 @@ export const ListCharacters = ({ category }) => {
           {
             (charactersFound) && charactersFound.map(character => {
               return (
-                <div
-                  key={character.char_id}
-                  className="relative h-96 w-64 bg-cover hover:scale-2"
-                  style={{ backgroundImage: `url(${character.img})` }}
-                >
-                  <div className="absolute bottom-0 h-12 w-full bg-slate-900 opacity-50 hover:h-24 hover:text-white">
-                    <p className="text-white py-3 px-5 cursor-pointer ">
-                      {
-                        character.name
-                      }
-                    </p>
-
-                  </div>
-                </div>
+                <CharacterCard key={character.char_id} character={character} />
               )
             })
           }
