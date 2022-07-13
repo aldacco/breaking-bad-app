@@ -6,7 +6,7 @@ const CATEGORY = 'Breaking+Bad'
 
 export const BreakingBadScreen = () => {
   useEffect(() => {
-    document.body.style.background = '#011300';
+    document.body.style.background = '#011300'
   }, [])
   return (
 

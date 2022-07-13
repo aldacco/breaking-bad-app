@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 export const Navbar = () => {
     return (
-        <div className='h-20 text-white'>
+        <div className='h-20 text-white relative'>
             <ul className='flex h-full justify-center items-center'>
                 <li className='p-5'>
                     <NavLink
@@ -21,11 +21,21 @@ export const Navbar = () => {
                         Better call Saul
                     </NavLink>
                 </li>
+
                 {/* <li>
                     <NavLink to='/login'>
                         Salir
                     </NavLink>
                 </li> */}
+                <li className='absolute right-24 text-gray-600'>
+                    <span>Luis Aldair</span>
+                </li>
+                <NavLink
+                    className='absolute right-5  text-gray-600 hover:text-white'
+                    to='/login'
+                >
+                    Logout
+                </NavLink>
             </ul>
         </div>
     )

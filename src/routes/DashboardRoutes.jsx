@@ -10,7 +10,7 @@ export const DashboardRoutes = () => {
     <div>
       <Navbar />
       <Routes>
-        <Route path='/' element={<HomeScreen />} />
+        <Route path='/' element={<BreakingBadScreen />} />
         <Route path='/breaking-bad' element={<BreakingBadScreen />} />
         <Route path='/better-call-saul' element={<BetterCallSaulScreen />} />
         <Route path='/character/:id' element={<CharacterScreen />} />
