@@ -27,9 +27,6 @@ export const Navbar = () => {
                         Salir
                     </NavLink>
                 </li> */}
-                <li className='absolute right-24 text-gray-600'>
-                    <span>Luis Aldair</span>
-                </li>
                 <NavLink
                     className='absolute right-5  text-gray-600 hover:text-white'
                     to='/login'

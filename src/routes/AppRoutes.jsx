@@ -5,7 +5,7 @@ import { DashboardRoutes } from "./DashboardRoutes"
 export const AppRoutes = () => {
   return (
     <div className="">
-      <BrowserRouter>
+      <BrowserRouter basename="/breaking-bad-app">
         <Routes>
           <Route path="/login" element={<LoginScreen />} />
           <Route path="/*" element={<DashboardRoutes />} />
